@@ -1,0 +1,19 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 14 |   @include set-background(lighten($primary-color, 10%));
+ *    |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss/_buttons.scss 14:3  @forward
+ *   scss/_index.scss 3:1     @use
+ *   scss/style.scss 1:1      root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 14 \2502    @include set-background(lighten($primary-color, 10%));\a    \2502    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss/_buttons.scss 14:3  @forward\a   scss/_index.scss 3:1     @use\a   scss/style.scss 1:1      root stylesheet";
+}
